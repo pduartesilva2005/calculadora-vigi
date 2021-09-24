@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Calculadora Vigi</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a>Calcular Porcentagem</a></li>
+        <li><a>Calcular Idades</a></li>
+      </ul>
+    </header>
+
+    <section id="percentage" class="percentage">
+      <div class="container">
+        <h2>Calculadora Vigi</h2>
+        <h1>porcentagem</h1>
+
+        <div class="form">
+          <label for="data">Dado (Quantidade)</label>
+          <input type="text" id="data" />
+
+          <label for="base">Base (Valor total)</label>
+          <input type="text" id="base" />
+
+          <button type="submit" class="btn" onclick="capture()">
+            Calcular
+          </button>
+        </div>
+
+        <div class="result">
+          <label>Resultado: </label>
+          <p id="valueResult"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ages" class="age">
+      <div class="container">
+        <h2>Calculadora Vigi</h2>
+        <h1>idades</h1>
+
+        <div class="form">
+          <label>Data de Nascimento:</label>
+          <h2>Calculadora Vigi</h2>
+          <h1>idades</h1>
+
+          <div class="form">
+            <label>Data de Nascimento:</label>
+            <input type="date" id="age" value="2020-01-01" />
+            <button class="btn" onclick="age()" type="submit">Calcular</button>
+            <p id="demo"></p>
+          </div>
+
+          <div class="result">
+            <label>Resultado:</label>
+            <p id="valueResult2"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
